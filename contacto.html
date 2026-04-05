@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/icono.png">
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Pizza Nandos</title>
 </head>
+
 <body>
-    <header>
+    <header class="encabezado">
         <nav>
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="menu.html">Menú</a></li>
                 <li><a href="tiendas.html">Tiendas</a></li>
@@ -17,43 +21,70 @@
             </ul>
         </nav>
     </header>
-    <main>  
+    <main>
         <section>
-            <article>
-            <h2>Contáctanos</h2>
-            <img src="imagenes/iconos contacto/telefono.png" alt="telefono" height="16px">
-            <p>+51 98765 43210</p>
-            <img src="imagenes/iconos contacto/sobre.png" alt="sobre" height="16px">
-            <p>info@nandoss.com</p>
-            <img src="imagenes/iconos contacto/ubicación.png" alt="ubicación" height="16px">
-            <p>Zárate Industrial, San Juan de Lurigancho 15427</p>
-            <h3>Name</h3>
-            <form action="">
-                <input type="text" placeholder="Your Name"><br>
-                <input type="email"placeholder="mail@example.com"><br>
-                <textarea name="mensaje"placeholder="mensaje"></textarea><br>
-                <button>enviar</button>
-            </form>
-            <br><br><br><br><br><br>
+
+
+            <article id="contacto">
+                <h2>Contáctanos</h2>
+                <div>
+                    <div class="centrar">
+                        <div>
+                            <div class="caja">
+                                <img src="imagenes/iconos contacto/telefono.png" alt="telefono" height="16px">
+                                <p>+51 98765 43210</p>
+                            </div>
+                            <div class="caja">
+                                <img src="imagenes/iconos contacto/sobre.png" alt="sobre" height="16px">
+                                <p>info@nandoss.com</p>
+                            </div>
+                            <div class="caja">
+                                <img src="imagenes/iconos contacto/ubicación.png" alt="ubicación" height="16px">
+                                <p>Zárate Industrial, San Juan de Lurigancho 15427</p>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Name</h3>
+                            <form action="">
+                                <input type="text" placeholder="Your Name"><br>
+                                <input type="email" placeholder="mail@example.com"><br>
+                                <textarea name="mensaje" placeholder="mensaje"></textarea><br>
+                                <button class="btn-mas">enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
             </article>
         </section>
     </main>
     <footer>
-        <h3>Libro de raclamaciones</h3>
-        <img src="imagenes/libro_de_reclamaciones.jpg" alt="libro de reclamaciones"height="80px">
-        <h3>Metodos de pago</h3>
-        <img src="imagenes/pagos.png" alt="pagos">
-        <p>Copyright © 2026 Website. All rights reserved      </p>
-        <h3>Sobre nosotros</h3>
-        <ul>
-            <li><a href="#">Historia</a></li>
-            <li><a href="#">Trabaja con nosotros</a></li>
-            <li><a href="#">Ventas corporaticas</a></li>
-            <li><a href="#">Comprobantes electronicos</a></li>
-        </ul>        
-        <img src="imagenes/iconos de redes/facebook.png" alt="facebook" height="16px">
-        <img src="imagenes/iconos de redes/instagram.png" alt="instagram" height="16px">
-        <img src="imagenes/iconos de redes/youtube.png" alt="youtube" height="16px">   
+        <div class="footer-top">
+            <div>
+                <h3>Libro de raclamaciones</h3>
+                <img src="imagenes/libro_de_reclamaciones.jpg" alt="libro de reclamaciones" height="80px">
+            </div>
+            <div>
+                <h3>Metodos de pago</h3>
+                <img src="imagenes/pagos.png" alt="pagos">
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <ul class="lista">
+                    <li><a href="#">Historia</a></li>
+                    <li><a href="#">Trabaja con nosotros</a></li>
+                    <li><a href="#">Ventas corporaticas</a></li>
+                    <li><a href="#">Comprobantes electronicos</a></li>
+                </ul>
+            </div>
+            <div class="socials">
+                <img src="imagenes/iconos de redes/facebook.png" alt="facebook" height="16px">
+                <img src="imagenes/iconos de redes/instagram.png" alt="instagram" height="16px">
+                <img src="imagenes/iconos de redes/youtube.png" alt="youtube" height="16px">
+            </div>
+        </div>
+        <p class="copy">Copyright © 2026 Website. All rights reserved </p>
     </footer>
 </body>
+
 </html>
