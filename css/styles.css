@@ -176,6 +176,10 @@ body {
     margin: 10px;
 }
 
+form div {
+    margin-bottom: 15px;
+}
+
 .btn-enviar:hover {
     background-color: #007d02;
     color: white;
