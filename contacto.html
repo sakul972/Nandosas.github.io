@@ -6,19 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="imagenes/icono.png">
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <title>Pizza Nandos</title>
 </head>
 
 <body>
     <header class="encabezado">
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="menu.html">Menú</a></li>
-                <li><a href="tiendas.html">Tiendas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg " style="background-color: #fa9000">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <div class="spinning-wheel">
+                        <img src="imagenes/logo2.png" alt="pizza" width="60px">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                    <ul class="nav navbar-nav mb-2 mb-lg-0 nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-center" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-center" aria-current="page" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-center" href=" tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active text-center" href="contacto.html">Contacto</a>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -44,16 +69,21 @@
                             </div>
                         </div>
                         <div>
-                            <h3>Name</h3>
+
                             <form action="">
-                                <div>
-                                    <input type="text" placeholder="Your Name">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="formGroupExampleInput"
+                                        placeholder="your name">
                                 </div>
-                                <div>
-                                    <input type="email" placeholder="mail@example.com">
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
                                 </div>
-                                <div>
-                                    <textarea name="mensaje" placeholder="mensaje"></textarea>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Menssage</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                                 <div>
                                     <button class="btn-enviar">enviar</button>
@@ -93,6 +123,8 @@
         </div>
         <p class="copy">Copyright © 2026 Website. All rights reserved </p>
     </footer>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
